@@ -14,14 +14,19 @@
   "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.9.0",
+    "@babel/plugin-proposal-class-properties": "^7.12.13",
+    "@babel/plugin-proposal-decorators": "^7.12.13",
     "@babel/preset-env": "^7.9.5",
+    "@babel/preset-typescript": "^7.12.17",
     "@rollup/plugin-alias": "^2.2.0",
     "@rollup/plugin-commonjs": "^11.1.0",
+    "@rollup/plugin-node-resolve": "^11.2.0",
     "cross-env": "^7.0.2",
     "rollup": "^2.7.3",
     "rollup-plugin-babel": "^4.4.0",
-    "rollup-plugin-vue": "^5.1.6",
+    "rollup-plugin-vue": "^5.1.9",
     "vue": "^2.6.11",
+    "vue-property-decorator": "^8.5.1",
     "vue-template-compiler": "^2.6.11"
   },
   "peerDependencies": {

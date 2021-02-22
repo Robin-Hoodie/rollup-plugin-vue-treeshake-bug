@@ -4,6 +4,7 @@ import vue from 'rollup-plugin-vue';
 import alias from '@rollup/plugin-alias';
 import commonjs from '@rollup/plugin-commonjs';
 import babel from 'rollup-plugin-babel';
+import nodeResolve from "@rollup/plugin-node-resolve";
 
 const projectRoot = path.resolve(__dirname, '..');
 
@@ -36,6 +37,7 @@ const esConfig = {
       exclude: 'node_modules/**',
       extensions: ['.js', '.jsx', '.ts', '.tsx', '.vue'],
     }),
+    nodeResolve(),
     commonjs(),
   ],
 };

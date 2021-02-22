@@ -1,18 +1,13 @@
 <script>
 import { hello } from './helpers';
+import { Component, Vue } from "vue-property-decorator";
 
-export default {
-  name: 'Larry', // vue component name
-  data() {
-    return {
-      name: 'Larry, the best of the three stooges',
-    };
-  },
-  computed: {
-    greeting() {
+@Component
+export default class Larry extends Vue {
+    name ='Larry, the best of the three stooges';
+    get greeting() {
       return hello(this.name);
     }
-  },
 };
 </script>
 
